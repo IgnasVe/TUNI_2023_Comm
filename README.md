@@ -77,6 +77,41 @@ In real life, there is always noise in the received signal, which makes receivin
 
 ➢ Task 3.6: Where is this noise stemming from in real life?
 
+**Answer**
+  - Electrical noise  
+      - Galvanic  
+      - Electrostatic coupling  
+      - electromagnetic induction  
+      - radio frequency interferenece  
+  - thermal noise
+      - Thermal noise is caused by the thermal agitation of electrons in resistances
+ 
+```
+https://www.sciencedirect.com/topics/engineering/thermal-noise
+An Overview of Digital Communication and Transmission
+Vijay K. Garg, in Wireless Communications & Networking, 2007
+
+4.17.4 Noise and SNR
+Noise
+Noise can be put into the following categories:
+•Thermal noise
+Thermal noise occurs in all transmission media and all communication equipment. It occurs due to random electron motion and is characterized by a uniform distribution of energy over the frequency spectrum with a Gaussian distribution of levels. 
+
+•Inter modulation (IM) noise
+Inter modulation (IM) noise is the result of the presence of IM products. If two signals with frequencies f1 and f2 are passed through a nonlinear device or medium, the result will be IM products that are spurious frequency components. These components may be present either inside or outside the band of interest for the device. IM noise may result from a number of causes:
+  -Improper level setting. If the level of input to a device is too high, the device is driven into its nonlinear operating region
+  -Improper alignment causing a device to function nonlinearly
+  -Nonlinear envelope
+  -Device malfunction
+
+•Crosstalk
+Crosstalk refers to unwanted coupling between signal paths. Crosstalk is caused by (1) electrical coupling between transmission media, (2) poor control of frequency response, and (3) the nonlinear performance in an analog multiplex system. There are two types of crosstalk:
+  -Intelligible — where at least four words are intelligible to the listener from extraneous conversations in a seven-second period (for voice applications)
+  - Unintelligible — crosstalk resulting from any other form of disturbing effects of one channel on another.
+
+•Impulse noise
+Impulse noise is noncontinuous and consists of irregular pulses or noise spikes of short duration and of relatively high amplitude. These spikes are often called “hits.” Impulse-noise degrades voice telephony only marginally, if at all; however, it may seriously degrade error rate on data or other digital circuits.
+```
 
 ◼ Set default parameters for the transmitter and receiver. The easiest way is to close all LabVIEW windows without saving and then open simulator.vi again. Then run the program to transmit and receive a signal.
 
@@ -162,22 +197,40 @@ In this final section, we practice calculating a link budget for our USRP-based 
 ➢ Task 4.1: In the following table, some values are given related to our transmission system. Look also at Figures 2 and 4 to understand the overall arrangement better. First, find out the attenuations of the coaxial cable and the attenuator by following the instructions given after the table. After that, calculate the received signal power in the output of the Drive Amplifier. Give your answer in dBm unit.
 
 
-| todo | value |
-|------|------|
+| Transmission system | dB |
+|------|------:|
 |Signal power before the Transmit Amplifier | –50 dBm|
 |Transmit Amplifier gain | 20 dB|
-|Attenuation of the coaxial cable | Find out!|
-|Attenuation of the 30-dB attenuator | Find out!|
+|Attenuation of the coaxial cable | 0.624 dB|
+|Attenuation of the 30-dB attenuator | 28.9 dB|
 |Low Noise Amplifier gain | 14 dB|
 |Drive Amplifier gain | 20 dB|
 |Other attenuations (RF switches, connectors, etc.) | 2 dB|
-|Received signal power | Calculate! |
+| | |
+|Received signal power | -27.524 dBm |
+
+```
+-50 + 20 + 14 + 20 - 0.624 - 28.9  - 2 = -27.524 dBm
+-27.524 dBm => 1.7684793782817999e-3 mW = 1.76847 microWatt
+```
+
+◼ The length of our coaxial cable in this system is 1 m. Find out, how many decibels of attenuation this cable causes. From the datasheet of the cable [5], you can read how much attenuation is caused by 100 m of cable, when the signal frequency is 2,5 GHz. Using that attenuation value, it is then straightforward to calculate, how much attenuation our one-meter cable causes. 
+```
+62.4 dB / 100 meter --> 0.624 dB / 1 meter
+```
+![InkedImr-195](https://user-images.githubusercontent.com/25344978/215868506-7bb5b310-b05f-42da-ad02-880c2d059b09.jpg)
 
 
-◼ The length of our coaxial cable in this system is 1 m. Find out, how many decibels of attenuation this cable causes. From the datasheet of the cable [5], you can read how much attenuation is caused by 100 m of cable, when the signal frequency is 2,5 GHz. Using that attenuation value, it is then straightforward to calculate, how much attenuation our one-meter cable causes.
+<br>
 
-◼ We also have a 30-dB attenuator in our system. However, this 30 dB is only a nominal value. In practice, the attenuation is frequency-dependent. Check from the manufacturer’s datasheet [6], how many decibels of attenuation there is at the frequency of 2,5 GHz.
+◼ We also have a 30-dB attenuator in our system. However, this 30 dB is only a nominal value. In practice, the attenuation is frequency-dependent. Check from the manufacturer’s datasheet [6], how many decibels of attenuation there is at the frequency of 2,5 GHz.  
+```
+2.5GH --> about 28.9 dB
+```
+![InkedVAT-30](https://user-images.githubusercontent.com/25344978/215868146-a72bf28a-ffbd-4a73-8688-e945882b0723.jpg)
 
+
+<br>
 
 Values provided by datasheets are so-called typical values and that accuracy is enough for us in this laboratory work. However, each individual component has slightly different values. Therefore, if we would like to determine the attenuation very accurately, we should measure the attenuation of that particular cable and attenuator with calibrated laboratory equipment.
 
