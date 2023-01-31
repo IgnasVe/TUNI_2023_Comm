@@ -1,44 +1,75 @@
 ## 3. Parameters and performance of the transmission system
 
-Here start the actual laboratory tasks. We study the parameters of our transmission system and how those
-affect system performance.
+Here start the actual laboratory tasks. We study the parameters of our transmission system and how those affect system performance.
 
-◼ If you haven’t downloaded yet the COMM100_lab.zip file from Moodle, do it now, and extract the
-content of the zip-file to a new folder. This is important so that LabVIEW can access all the files.
+◼ If you haven’t downloaded yet the COMM100_lab.zip file from Moodle, do it now, and extract the content of the zip-file to a new folder. This is important so that LabVIEW can access all the files.
 
-◼ Open the file simulator.vi with LabVIEW. This is the main program used for setting all transmitter
-and receiver parameters. Note! Especially if you are using TUNI Virtual Desktop, please make sure
-that you use 32-bit version of LabVIEW. The 64-bit version might give an error regarding lvanlys.dll.
+◼ Open the file simulator.vi with LabVIEW. This is the main program used for setting all transmitter and receiver parameters. Note! Especially if you are using TUNI Virtual Desktop, please make sure that you use 32-bit version of LabVIEW. The 64-bit version might give an error regarding lvanlys.dll.
 
 
 ### 3.1. Transmit signal
 
-Transmission systems have limited frequency range. The bandwidth of a transmit signal must be within the
-available frequency range.
+Transmission systems have limited frequency range. The bandwidth of a transmit signal must be within the available frequency range.
 
 ➢ Task 3.1: Using the equation learned in this course, calculate the bandwidth of the transmit signal,
 when the transmitter program uses default parameters. Remember that the signal bandwidth is affected by symbol rate and pulse shape. From the pulse shaping parameters section of simulator.vi,
-you can see that it is using a raised-cosine pulse with a roll-off factor (filter parameter) of 𝛼 = 0,5.
-[Hint: Lecture 7, slides 24–27]
+you can see that it is using a raised-cosine pulse with a roll-off factor (filter parameter) of 𝛼 = 0,5.[Hint: Lecture 7, slides 24–27]
 
-➢ Task 3.2: Check the spectrum figure of the transmit signal. Does the calculated bandwidth match
-with the actual bandwidth of the transmit signal shown in the spectrum? Note that you can zoom
-the figure by the tools on the bottom left corner. Include the spectrum figure to your report.
-The Packet length (bits) parameter of the transmitter defines the amount of information bits in one data
-packet.
+**Solution 3.1**  
+  
+```math equation
+  B = (1 + \alpha) / 2T 
+```
+``` 
+1/T (symbol rate) = 500kHz (symbol/sec)
+𝛼 (filter parameter) = 0.5
+oneside Bandwidth = (1+0.5) * 500/2 = 375 kHz
+double  Bandwidth = 2 * 375         = 750 kHz
+```
 
-➢ Task 3.3: Let us consider the case of 1000 transmitted information bits. When using QPSK modulation (modulation type), use the packet duration shown in the transmitter side to calculate the information data rate (bits/second) of this system. How about, what is the information data rate, if
-BPSK modulation is used? [Note that the packet duration field of the program does not update automatically after changing the modulation type parameter. You must run the program to update it.]
 
-➢ Task 3.4: If you transmit 1000 bits, how many symbols you transmit using BPSK modulation? How
-about in case of QPSK? [You will find answers easier from the course material than from LabVIEW.]
+➢ Task 3.2: Check the spectrum figure of the transmit signal. Does the calculated bandwidth match with the actual bandwidth of the transmit signal shown in the spectrum? Note that you can zoom the figure by the tools on the bottom left corner. Include the spectrum figure to your report.
+
+**Solution 3.2**  
+![image](https://user-images.githubusercontent.com/25344978/215765602-24a0ae1b-2595-4075-8f8a-e14f6c80140e.png)
+
+
+The Packet length (bits) parameter of the transmitter defines the amount of information bits in one data packet.
+
+➢ Task 3.3: Let us consider the case of 1000 transmitted information bits. When using QPSK modulation (modulation type), use the packet duration shown in the transmitter side to calculate the information data rate (bits/second) of this system. How about, what is the information data rate, if BPSK modulation is used? [Note that the packet duration field of the program does not update automatically after changing the modulation type parameter. You must run the program to update it.]
+
+**Solution 3.3**  
+
+|Modulation type|Packet duration(msec)|  
+| -----  |--:|
+|QPSK | 1.136 msec|
+|BPSK | 2.136 msec|
+
+
+➢ Task 3.4: If you transmit 1000 bits, how many symbols you transmit using BPSK modulation? How about in case of QPSK? [You will find answers easier from the course material than from LabVIEW.]
+
+**Solution 3.4**  
+
+|Modulation type|number of symbols (1000 bits)|  
+| -----  | --:|
+|QPSK |  500|
+|BPSK | 1000|
+
 
 ➢ Task 3.5: With the symbol rate of 500 kSym/s, it takes 1 ms to transmit 500 QPSK data symbols.
-However, the transmitter program indicates the packet duration to be 1,136 ms. It means that the
-net data share is then 1 ms⁄1,136 ms ≈ 88 %. What would be the net data share (%), if we
-transmit only 100 bits in one packet? [In other words, check with the transmitter program the
-packet duration for 100 bits when using QPSK and then calculate the net data share. Please note
-that also 1 ms will change to another number. You must calculate how many QPSK symbols corresponds to 100 bits, and then how long it takes to transmit those symbols with given symbol rate.]
+However, the transmitter program indicates the packet duration to be 1,136 ms. It means that the net data share is then 1 ms⁄1,136 ms ≈ 88 %. What would be the net data share (%), if we transmit only 100 bits in one packet? [In other words, check with the transmitter program the packet duration for 100 bits when using QPSK and then calculate the net data share. Please note that also 1 ms will change to another number. You must calculate how many QPSK symbols corresponds to 100 bits, and then how long it takes to transmit those symbols with given symbol rate.]
+
+**Solution 3.5**
+
+500k (Symbol rate, Hz) ->   500 QPSK in 1ms (500symbols in 1000bits)   
+500k (Symbol rate, Hz) ->    50 QPSK in 0.1ms (50symbols in 100bits)
+
+|transmit bits| Packet duration (msec) |net data share (%)|  ratio |
+| -----:| --:| --:| --:|
+| 1000 | 1.136 msec | 88 % | 1.0/1.136|
+| 100  | 0.236 msec | 42 % | 0.1/0.236|
+
+<br>
 
 ### 3.2. Noise
 
