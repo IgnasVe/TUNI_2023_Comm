@@ -1,0 +1,184 @@
+## 3. Parameters and performance of the transmission system
+
+Here start the actual laboratory tasks. We study the parameters of our transmission system and how those
+affect system performance.
+
+◼ If you haven’t downloaded yet the COMM100_lab.zip file from Moodle, do it now, and extract the
+content of the zip-file to a new folder. This is important so that LabVIEW can access all the files.
+
+◼ Open the file simulator.vi with LabVIEW. This is the main program used for setting all transmitter
+and receiver parameters. Note! Especially if you are using TUNI Virtual Desktop, please make sure
+that you use 32-bit version of LabVIEW. The 64-bit version might give an error regarding lvanlys.dll.
+
+
+### 3.1. Transmit signal
+
+Transmission systems have limited frequency range. The bandwidth of a transmit signal must be within the
+available frequency range.
+
+➢ Task 3.1: Using the equation learned in this course, calculate the bandwidth of the transmit signal,
+when the transmitter program uses default parameters. Remember that the signal bandwidth is affected by symbol rate and pulse shape. From the pulse shaping parameters section of simulator.vi,
+you can see that it is using a raised-cosine pulse with a roll-off factor (filter parameter) of 𝛼 = 0,5.
+[Hint: Lecture 7, slides 24–27]
+
+➢ Task 3.2: Check the spectrum figure of the transmit signal. Does the calculated bandwidth match
+with the actual bandwidth of the transmit signal shown in the spectrum? Note that you can zoom
+the figure by the tools on the bottom left corner. Include the spectrum figure to your report.
+The Packet length (bits) parameter of the transmitter defines the amount of information bits in one data
+packet.
+
+➢ Task 3.3: Let us consider the case of 1000 transmitted information bits. When using QPSK modulation (modulation type), use the packet duration shown in the transmitter side to calculate the information data rate (bits/second) of this system. How about, what is the information data rate, if
+BPSK modulation is used? [Note that the packet duration field of the program does not update automatically after changing the modulation type parameter. You must run the program to update it.]
+
+➢ Task 3.4: If you transmit 1000 bits, how many symbols you transmit using BPSK modulation? How
+about in case of QPSK? [You will find answers easier from the course material than from LabVIEW.]
+
+➢ Task 3.5: With the symbol rate of 500 kSym/s, it takes 1 ms to transmit 500 QPSK data symbols.
+However, the transmitter program indicates the packet duration to be 1,136 ms. It means that the
+net data share is then 1 ms⁄1,136 ms ≈ 88 %. What would be the net data share (%), if we
+transmit only 100 bits in one packet? [In other words, check with the transmitter program the
+packet duration for 100 bits when using QPSK and then calculate the net data share. Please note
+that also 1 ms will change to another number. You must calculate how many QPSK symbols corresponds to 100 bits, and then how long it takes to transmit those symbols with given symbol rate.]
+
+### 3.2. Noise
+
+In real life, there is always noise in the received signal, which makes receiving the signal more difficult. This
+is the reason why also our LabVIEW program simulates the channel by adding noise to the signal.
+
+➢ Task 3.6: Where is this noise stemming from in real life?
+
+◼ Set default parameters for the transmitter and receiver. The easiest way is to close all LabVIEW
+windows without saving and then open simulator.vi again. Then run the program to transmit and
+receive a signal.
+
+➢ Task 3.7: In LabVIEW, both the transmitted and received signal are visualized with several figures.
+Next, observe how the noise is visible in different figures. Include the screenshots of all necessary
+figures to your report, so that you can use them to support your explanations. There are going to
+be six figures in total, because parts a, b and c need two figures each (transmitted vs. received).
+
+a) How the noise shows in the constellation figure? In other words, compare the transmitted
+and received signal constellations. Naturally, the transmitted signal constellation does not contain any noise, but the received signal constellation does.
+
+b) How the noise shows in the time-domain (signal waveform) figure? Compare, once again,
+the transmitted and received signals. [Hint: You must zoom the figure to see the noise.]
+
+c) How the noise shows in the signal spectrum? Compare, once again, the transmitted and received signals. [Hint: You do not need to zoom spectrum figures to see the noise.]
+The USRP is not a calibrated device, so we do not know exactly the actual transmit power level in watts or
+in dBm. However, we can increase or decrease the transmit power by tuning the power gain of the Transmit Amplifier shown in Figure 2. You can do this by tuning the TX Gain (dB) parameter in the user interface
+of simulator.vi. Similarly, you can tune receiver-side amplification (Drive Amplifier in Figure 2) with the
+RX gain (dB) parameter of the user interface.
+
+➢ Task 3.8: Set the parameters of the simulator.vi program and save spectrum figures according to
+the instructions below. Compare then the two spectrum figures visually. The signal power should
+be approximately equal in both figures. How about the noise power? How do you explain this?
+
+◼ Set the transmitter gain to 20 dB and the receiver gain to 0 dB. Run the program. Save the
+figure of the received signal spectrum.
+
+◼ Set the transmitter gain to 0 dB and the receiver gain to 20 dB. Run the program. Save,
+once again, the figure of the received signal spectrum.
+
+### 3.3. How signal-to-noise ratio affects bit-error rate?
+
+Let us study still a bit further, how noise affects a signal. We take an example in which there is so much
+noise that the receiver is not able to interpret all the bits correctly. Bit-error rate (BER) is a value, which is
+used in communications engineering to express how often bit errors occur in data transmission. For example, a bit-error rate of 10−3 = 0,001 means that, on average, every one-thousandth bit is erroneous. Bit
+errors are caused by noise, interference etc. The amount of noise in a signal is measured with signal-to-noise ratio 
+SNR = 𝑆/𝑁 = 10*log10(𝑆/𝑁)dB, where S is signal power and N is noise power. We study next how
+SNR affects the bit-error rate in case of BPSK and QPSK modulation, when noise is the only thing that deteriorates signal quality.
+
+◼ First, set parameters of simulator.vi program according to the table below. All other parameters
+not mentioned on the table should be kept in their default values.
+```
+TRANSMITTER RECEIVER
+Packet length (bits) 1000 RX gain (dB) 0
+# of iterations 100
+TX gain (dB) 30
+```
+
+➢ Task 3.9: Use the simulator.vi and fill in the average bit-error rates to the table below. Save also
+figure of the received signal constellation for all SNR values and for both modulation methods (12
+figures in total). Arrange the constellation figures side by side to your report so that they are easy
+to compare. Please also note:
+o SNR value is set to the simulator by using the noise power (dB) channel model parameter.
+For example, if you want to have SNR of 2 dB, you should use –2 dB as noise power. In other words, negative noise power means positive SNR in this simulator.
+o Because the # of iterations parameter is set to 100, the program transmits 100 packets, and
+each packet has 1000 bits (packet length). The program then calculates the average biterror rate among the 100 received packets and shows the result in the Average bit-error
+rate field of the simulator. This is the BER value you want to write down to your table.
+o Remember to also change the modulation type parameter so that you can simulate BER
+values for both QPSK and BPSK one after another.
+o Do not change the scale or size of the constellation figure in LabVIEW during simulations.
+This guarantees that constellation figures are easier to compare with each other.
+SNR BER (QPSK) BER (BPSK)
+0 dB
+2 dB
+4 dB
+6 dB
+8 dB
+10 dB
+➢ Task 3.10: Analyze the results of the previous task by answering to the following questions.
+a) How the amount of noise affects bit-error rate?
+b) What can you conclude by comparing the BER results of BPSK to the BER results of QPSK?
+c) Why do you get less bit errors with the other modulation type although the signal power
+and noise power (i.e. SNR) are the same for both modulation types?
+d) So, if one modulation type gives you less bit errors than the other modulation type (SNR
+being the same), why would you ever want to use the modulation type that causes more
+bit errors?
+
+➢ Task 3.11: Draw a graph of the values in the table of Task 3.9. The graph should have SNR on the
+horizontal axis and BER on the vertical axis. In the graph, you should have two curves (QPSK and
+BPSK). If possible, use logarithmic scale on vertical axis, which makes the small BER values easier to
+read. You can draw the graph using Excel or any other computer program you like. [Hint: In Matlab,
+logarithmic scale on vertical axis can be plotted with semilogy command. In Excel desktop versions, you must click the graph and then Format → Vertical (Value) Axis → Format Selection → Axis
+options → Logarithmic Scale, Base 10. In web version of Excel, you must click the graph and then
+Chart → Axes → Primary Vertical Axis → Log scale. This way you do not have to calculate logarithmic values yourself, but the software does it for you!]
+
+
+## 4. Link budget of the transmission system
+
+In this final section, we practice calculating a link budget for our USRP-based transmission system. More
+information about link budgets can be found, e.g., from lecture slides [Lecture 4, slides 27–28] and from the
+corresponding lecture video recording.
+
+➢ Task 4.1: In the following table, some values are given related to our transmission system. Look also at Figures 2 and 4 to understand the overall arrangement better. First, find out the attenuations
+of the coaxial cable and the attenuator by following the instructions given after the table. After
+that, calculate the received signal power in the output of the Drive Amplifier. Give your answer in
+dBm unit.
+
+
+| todo | value |
+|------|------|
+|Signal power before the Transmit Amplifier | –50 dBm|
+|Transmit Amplifier gain | 20 dB|
+|Attenuation of the coaxial cable | Find out!|
+|Attenuation of the 30-dB attenuator | Find out!|
+|Low Noise Amplifier gain | 14 dB|
+|Drive Amplifier gain | 20 dB|
+|Other attenuations (RF switches, connectors, etc.) | 2 dB|
+|Received signal power | Calculate! |
+
+
+◼ The length of our coaxial cable in this system is 1 m. Find out, how many decibels of attenuation
+this cable causes. From the datasheet of the cable [5], you can read how much attenuation is
+caused by 100 m of cable, when the signal frequency is 2,5 GHz. Using that attenuation value, it is
+then straightforward to calculate, how much attenuation our one-meter cable causes.
+
+◼ We also have a 30-dB attenuator in our system. However, this 30 dB is only a nominal value. In
+practice, the attenuation is frequency-dependent. Check from the manufacturer’s datasheet [6],
+how many decibels of attenuation there is at the frequency of 2,5 GHz.
+
+Values provided by datasheets are so-called typical values and that accuracy is enough for us in this laboratory work. However, each individual component has slightly different values. Therefore, if we would like to
+determine the attenuation very accurately, we should measure the attenuation of that particular cable and
+attenuator with calibrated laboratory equipment.
+
+## References
+[1] Ettus Research, B200/B210/B200mini/B205mini.
+Available: https://kb.ettus.com/B200/B210/B200mini/B205mini
+[2] NI USRP-2900 Block Diagram.
+Available: https://www.ni.com/docs/en-US/bundle/usrp-2900-feature/page/block-diagram.html
+[3] NI USRP-2900/2901 Getting Started Guide. Available:
+https://www.ni.com/docs/en-US/bundle/usrp-290x-getting-started/page/2900-connectors.html
+[4] NI USRP-2900 Device Specifications.
+Available: https://www.ni.com/docs/en-US/bundle/usrp-2900-specs/page/specs.html
+[5] Times Microwave Systems, LMR-195 Flexible Low Loss Communications Coax Datasheet.
+Available: https://timesmicrowave.com/documentation/lmr-19
