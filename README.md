@@ -226,6 +226,12 @@ d) So, if one modulation type gives you less bit errors than the other modulatio
    - In Excel desktop versions, you must click the graph and then Format → Vertical (Value) Axis → Format Selection → Axis options → Logarithmic Scale, Base 10.   
    - In web version of Excel, you must click the graph and then Chart → Axes → Primary Vertical Axis → Log scale. This way you do not have to calculate logarithmic values yourself, but the software does it for you!]
 
+**Solution 3.11**
+
+Figure. Bit-error rate   
+<img src="https://user-images.githubusercontent.com/25344978/216043263-494c303a-b662-409d-84e4-71b91f617e74.png" width="400">
+
+
 
 ## 4. Link budget of the transmission system
 
