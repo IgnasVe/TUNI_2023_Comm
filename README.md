@@ -184,6 +184,9 @@ to compare. Please also note:
 
    - Do not change the scale or size of the constellation figure in LabVIEW during simulations. This guarantees that constellation figures are easier to compare with each other.
 
+**Solution 3.9** 
+
+Table. Bit-error rate
 |SNR | BER (QPSK) |BER (BPSK)|
 |--:| --:| --:|
 |0 dB| 0.167680 | 0.088050|
@@ -193,7 +196,7 @@ to compare. Please also note:
 |8 dB| 0.007830 | 0.000260|
 |10 dB| 0.001100 | 0.000010|
 
-
+Figure. Constellation of BPSK and QPSK  
 |SNR (dB) | BPSK constellation| QPSK constellation |
 |--:| -- | -- |
 |0 dB| ![B0](https://user-images.githubusercontent.com/25344978/216029411-c3ae95cc-42c1-43af-8705-7cdfc6fece4c.PNG) | ![Q0](https://user-images.githubusercontent.com/25344978/216029453-85f49f64-c0fb-41ca-a26b-bc133518bcda.PNG)|
