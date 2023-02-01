@@ -164,33 +164,47 @@ where S is signal power and N is noise power. We study next how SNR affects the 
 ◼ First, set parameters of simulator.vi program according to the table below. All other parameters not mentioned on the table should be kept in their default values.
  
 ```
-TRANSMITTER               RECEIVER
-Packet length (bits) 1000 RX gain (dB) 0
+TRANSMITTER            
+Packet length (bits) 1000 
 # of iterations 100
 TX gain (dB) 30
+
+RECEIVER
+RX gain (dB) 0
 ```
 
 ➢ Task 3.9: Use the simulator.vi and fill in the average bit-error rates to the table below. Save also figure of the received signal constellation for all SNR values and for both modulation methods (12 figures in total). Arrange the constellation figures side by side to your report so that they are easy
 to compare. Please also note:
 
-o SNR value is set to the simulator by using the noise power (dB) channel model parameter.
-For example, if you want to have SNR of 2 dB, you should use –2 dB as noise power. In other words, negative noise power means positive SNR in this simulator.
+   - SNR value is set to the simulator by using the noise power (dB) channel model parameter. For example, if you want to have SNR of 2 dB, you should use –2 dB as noise power. In other words, negative noise power means positive SNR in this simulator.
 
-o Because the # of iterations parameter is set to 100, the program transmits 100 packets, and each packet has 1000 bits (packet length). The program then calculates the average biterror rate among the 100 received packets and shows the result in the Average bit-error rate field of the simulator. This is the BER value you want to write down to your table.
+   - Because the # of iterations parameter is set to 100, the program transmits 100 packets, and each packet has 1000 bits (packet length). The program then calculates the average biterror rate among the 100 received packets and shows the result in the Average bit-error rate field of the simulator. This is the BER value you want to write down to your table.
 
-o Remember to also change the modulation type parameter so that you can simulate BER values for both QPSK and BPSK one after another.
+   - Remember to also change the modulation type parameter so that you can simulate BER values for both QPSK and BPSK one after another.
 
-o Do not change the scale or size of the constellation figure in LabVIEW during simulations. This guarantees that constellation figures are easier to compare with each other.
-```
-SNR BER (QPSK) BER (BPSK)
-0 dB
-2 dB
-4 dB
-6 dB
-8 dB
-10 dB
-```
+   - Do not change the scale or size of the constellation figure in LabVIEW during simulations. This guarantees that constellation figures are easier to compare with each other.
 
+|SNR | BER (QPSK) |BER (BPSK)|
+|--:| --:| --:|
+|0 dB| 0.167680 | 0.088050|
+|2 dB| 0.110230 | 0.039510|
+|4 dB| 0.060880 | 0.014790|
+|6 dB| 0.025510 | 0.003250|
+|8 dB| 0.007830 | 0.000260|
+|10 dB| 0.001100 | 0.000010|
+
+
+|SNR (dB) | BPSK constellation| QPSK constellation |
+|--:| -- | -- |
+|0 dB| ![B0](https://user-images.githubusercontent.com/25344978/216029411-c3ae95cc-42c1-43af-8705-7cdfc6fece4c.PNG) | ![Q0](https://user-images.githubusercontent.com/25344978/216029453-85f49f64-c0fb-41ca-a26b-bc133518bcda.PNG)|
+|2 dB| ![B2](https://user-images.githubusercontent.com/25344978/216029490-bf87b029-b782-41ca-96bb-c94aa2d1c79f.PNG)|![Q2](https://user-images.githubusercontent.com/25344978/216029533-20038702-4357-42d8-bd07-32b763bb6050.PNG)|
+|4 dB| ![B4](https://user-images.githubusercontent.com/25344978/216029569-759e9438-1ed0-4abb-beb4-c05434e8c87f.PNG)|![Q4](https://user-images.githubusercontent.com/25344978/216029605-622c7462-e1e0-4849-85af-419fbe19088f.PNG)|
+|6 dB| ![B6](https://user-images.githubusercontent.com/25344978/216029649-fed81d0c-a231-40fa-8c64-bb298ac0441a.PNG) |![Q6](https://user-images.githubusercontent.com/25344978/216029680-3714ac49-aad6-43d9-a8ed-7c2ffb38a818.PNG)|
+|8 dB| ![B8](https://user-images.githubusercontent.com/25344978/216029739-c86eabea-3bbd-45cf-b641-205e9fd94b44.PNG)|![Q8](https://user-images.githubusercontent.com/25344978/216029792-fdefc132-2dbf-44c0-b77f-a44adfac50f1.PNG)|
+|10 dB| ![B10](https://user-images.githubusercontent.com/25344978/216029843-354188cf-f18f-4b6b-85fa-0fcb89d0b915.PNG) |![Q10](https://user-images.githubusercontent.com/25344978/216029866-adeba95f-4dd3-4cc6-a287-14f37ec97b97.PNG)|
+
+
+<br>
 
 ➢ Task 3.10: Analyze the results of the previous task by answering to the following questions.  
 
