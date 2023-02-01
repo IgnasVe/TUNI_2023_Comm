@@ -221,9 +221,10 @@ d) So, if one modulation type gives you less bit errors than the other modulatio
 
 
 ➢ Task 3.11: Draw a graph of the values in the table of Task 3.9. The graph should have SNR on the horizontal axis and BER on the vertical axis. In the graph, you should have two curves (QPSK and BPSK). If possible, use logarithmic scale on vertical axis, which makes the small BER values easier to read. You can draw the graph using Excel or any other computer program you like. 
-[Hint: In Matlab, logarithmic scale on vertical axis can be plotted with semilogy command.  
-In Excel desktop versions, you must click the graph and then Format → Vertical (Value) Axis → Format Selection → Axis options → Logarithmic Scale, Base 10.   
-In web version of Excel, you must click the graph and then Chart → Axes → Primary Vertical Axis → Log scale. This way you do not have to calculate logarithmic values yourself, but the software does it for you!]
+
+   - In Matlab, logarithmic scale on vertical axis can be plotted with semilogy command.  
+   - In Excel desktop versions, you must click the graph and then Format → Vertical (Value) Axis → Format Selection → Axis options → Logarithmic Scale, Base 10.   
+   - In web version of Excel, you must click the graph and then Chart → Axes → Primary Vertical Axis → Log scale. This way you do not have to calculate logarithmic values yourself, but the software does it for you!]
 
 
 ## 4. Link budget of the transmission system
