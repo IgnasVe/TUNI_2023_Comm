@@ -31,7 +31,7 @@ double  Bandwidth = 2 * 375         = 750 kHz
 ➢ Task 3.2: Check the spectrum figure of the transmit signal. Does the calculated bandwidth match with the actual bandwidth of the transmit signal shown in the spectrum? Note that you can zoom the figure by the tools on the bottom left corner. Include the spectrum figure to your report.
 
 **Solution 3.2**  
-![image](https://user-images.githubusercontent.com/25344978/215765602-24a0ae1b-2595-4075-8f8a-e14f6c80140e.png)
+<img src="https://user-images.githubusercontent.com/25344978/215765602-24a0ae1b-2595-4075-8f8a-e14f6c80140e.png" width="400">
 
 
 The Packet length (bits) parameter of the transmitter defines the amount of information bits in one data packet.
@@ -113,9 +113,18 @@ Crosstalk refers to unwanted coupling between signal paths. Crosstalk is caused 
 Impulse noise is noncontinuous and consists of irregular pulses or noise spikes of short duration and of relatively high amplitude. These spikes are often called “hits.” Impulse-noise degrades voice telephony only marginally, if at all; however, it may seriously degrade error rate on data or other digital circuits.
 ```
 
+<br>
+
+
 ◼ Set default parameters for the transmitter and receiver. The easiest way is to close all LabVIEW windows without saving and then open simulator.vi again. Then run the program to transmit and receive a signal.
 
 ➢ Task 3.7: In LabVIEW, both the transmitted and received signal are visualized with several figures. Next, observe how the noise is visible in different figures. Include the screenshots of all necessary figures to your report, so that you can use them to support your explanations. There are going to be six figures in total, because parts a, b and c need two figures each (transmitted vs. received).
+
+| signal |transmitted| received|
+|:-- |--- | --- |
+|a. constellation|![b-left](https://user-images.githubusercontent.com/25344978/215999497-34901e1c-452a-4539-a503-0562b5ac9162.PNG) |![b-right](https://user-images.githubusercontent.com/25344978/215999620-8c7f1a92-af26-480e-884d-91672c569ae5.PNG) |
+|b. signal waveform |![a-left](https://user-images.githubusercontent.com/25344978/215999684-95c2f7ba-fcd0-49ba-8160-1f49cc552d63.PNG) | ![a-right](https://user-images.githubusercontent.com/25344978/215999746-37715fba-eff9-4573-93f8-7799a654eba1.PNG) |
+|c. signal spectrum |![c-left](https://user-images.githubusercontent.com/25344978/215999824-90fadbca-7f30-4b0e-9ce8-7a90c9955392.PNG) |![c-right](https://user-images.githubusercontent.com/25344978/215999879-1bbcab38-7275-482b-8f70-f8251c7ce5b1.PNG) |
 
 a) How the noise shows in the constellation figure? In other words, compare the transmitted and received signal constellations. Naturally, the transmitted signal constellation does not contain any noise, but the received signal constellation does.
 
@@ -218,7 +227,7 @@ In this final section, we practice calculating a link budget for our USRP-based 
 ```
 62.4 dB / 100 meter --> 0.624 dB / 1 meter
 ```
-![InkedImr-195](https://user-images.githubusercontent.com/25344978/215868506-7bb5b310-b05f-42da-ad02-880c2d059b09.jpg)
+<img src="https://user-images.githubusercontent.com/25344978/215868506-7bb5b310-b05f-42da-ad02-880c2d059b09.jpg" width="500">
 
 
 <br>
@@ -227,7 +236,7 @@ In this final section, we practice calculating a link budget for our USRP-based 
 ```
 2.5GH --> about 28.9 dB
 ```
-![InkedVAT-30](https://user-images.githubusercontent.com/25344978/215868146-a72bf28a-ffbd-4a73-8688-e945882b0723.jpg)
+<img src="https://user-images.githubusercontent.com/25344978/215868146-a72bf28a-ffbd-4a73-8688-e945882b0723.jpg" width="400">
 
 
 <br>
