@@ -120,6 +120,8 @@ Impulse noise is noncontinuous and consists of irregular pulses or noise spikes 
 
 ➢ Task 3.7: In LabVIEW, both the transmitted and received signal are visualized with several figures. Next, observe how the noise is visible in different figures. Include the screenshots of all necessary figures to your report, so that you can use them to support your explanations. There are going to be six figures in total, because parts a, b and c need two figures each (transmitted vs. received).
 
+**Solution 3.7**
+
 | signal |transmitted| received|
 |:-- |--- | --- |
 |a. constellation|![b-left](https://user-images.githubusercontent.com/25344978/215999497-34901e1c-452a-4539-a503-0562b5ac9162.PNG) |![b-right](https://user-images.githubusercontent.com/25344978/215999620-8c7f1a92-af26-480e-884d-91672c569ae5.PNG) |
@@ -137,6 +139,14 @@ c) How the noise shows in the signal spectrum? Compare, once again, the transmit
 The USRP is not a calibrated device, so we do not know exactly the actual transmit power level in watts or in dBm. However, we can increase or decrease the transmit power by tuning the power gain of the Transmit Amplifier shown in Figure 2. You can do this by tuning the TX Gain (dB) parameter in the user interface of simulator.vi. Similarly, you can tune receiver-side amplification (Drive Amplifier in Figure 2) with the RX gain (dB) parameter of the user interface.
 
 ➢ Task 3.8: Set the parameters of the simulator.vi program and save spectrum figures according to the instructions below. Compare then the two spectrum figures visually. The signal power should be approximately equal in both figures. How about the noise power? How do you explain this?
+
+**Solution 3.8**
+
+| condition | transmitter | receiver |
+|:-- | -- | -- |
+| TX Gain = 20dB  &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  <br> RX Gain = 0dB &nbsp; &nbsp; &nbsp;&nbsp;| ![38aleft](https://user-images.githubusercontent.com/25344978/216007963-6784333e-532f-4c95-9e4e-2f5562024773.PNG) |![38aright](https://user-images.githubusercontent.com/25344978/216008000-e0383156-e04a-4b03-815d-c2c267df7648.PNG)|
+| TX Gain = 0dB &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  <br> RX Gain = 20dB  &nbsp; &nbsp; &nbsp;&nbsp;| ![38bleft](https://user-images.githubusercontent.com/25344978/216008068-3c4f6471-d044-4389-81c7-5f7dc4f48ce3.PNG) |![38bright](https://user-images.githubusercontent.com/25344978/216008110-066cbe37-5fd1-42a3-b32a-cb4044e079a0.PNG) |
+
 
 
 ◼ Set the transmitter gain to 20 dB and the receiver gain to 0 dB. Run the program. Save the figure of the received signal spectrum.
