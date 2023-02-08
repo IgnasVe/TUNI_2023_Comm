@@ -28,10 +28,9 @@ We present the design of a passive wireless communication method that does not r
 Zerina Kapetanovic, Miguel Morales, Joshua R. Smith. (2022). Communication by means of modulated Johnson noise. Proceedings of the National Academy of Sciences. (Volume 119, No. 49) DOI: 10.1073/pnas.2201337119
 Limited access at https://doi.org/10.1073/pnas.2201337119
 
-Vincent Liu, Aaron Parks, Vamsi Talla, Shyamnath Gollakota, David Wetherall, Joshua R. Smith. (2013). Ambient backscatter: wireless communication out of thin air. ACM SIGCOMM Computer Communication Review. (Volume 43, Issue 4, pp39–50, October)   Available at https://doi.org/10.1145/2534169.2486015
+Vincent Liu, Aaron Parks, Vamsi Talla, Shyamnath Gollakota, David Wetherall, Joshua R. Smith. (2013). Ambient backscatter: wireless communication out of thin air. ACM SIGCOMM Computer Communication Review. (Volume 43, Issue 4, pp39–50, October)   Available at https://dl.acm.org/doi/pdf/10.1145/2486001.2486015
 
 Jin-Ping Niu, Geoffrey Ye Li. (2019). An Overview on Backscatter Communications. Journal of Communications and Information Networks ( Volume 4, Issue 2, June)
 DOI: 10.23919/JCIN.2019.8917868  
-Available at https://ieeexplore.ieee.org/document/8917868
+Limited access at https://ieeexplore.ieee.org/document/8917868
 
-https://dl.acm.org/doi/10.1145/2534169.2486015
