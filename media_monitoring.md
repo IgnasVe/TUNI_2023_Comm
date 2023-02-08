@@ -3,7 +3,8 @@
 
 **Group 10**
 
-Authors: Yukyeong Kim, 
+Yukyeong Kim, Ignas Vezikauskas, Ritwik Guha  
+
 
 Device transmits radio waves with almost no power—without violating the laws of physics  
 JANUARY 24, 2023  
