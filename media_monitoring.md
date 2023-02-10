@@ -25,10 +25,10 @@ Figure.
 
 **Analysis**
 
-Article tells about arguments between peer reviewer and research team that their method did not violate the second law of thermodynamics or not, but our interest is communication not thermodynamics, so we skip this part, let's accpet that it did not break the law. In this ultra-low-power method, like other low-power communication systems, transmitter consumes barely zero energy, on the other hand receiver consumes good amount of power, which (base station) has usually no problem with power supply. 
+Article mentions about arguments between peer reviewer and research team that their method did violate the second law of thermodynamics or not, but our interest is communication not thermodynamics, so we skip this part, let's accpet that it did not break the law. In this ultra-low-power method, like other low-power communication systems, transmitter consumes barely amount of energy, on the other hand receiver consumes good amount of power, which (base station) has usually no problem with power supply. 
 
 
-Advantages: **need to edit** an advantage of our new method is that there is no need to expose the patient to a strong external radio signal, which can cause tissue heating. Even more exciting, we believe that related ideas could enable other new forms of communication in which other natural signal sources, such as thermal noise from biological tissue or other electronic components, can be modulated
+Advantages: **need to edit** an advantage of our new method is that there is no need to expose the patient to a strong external radio signal, which can cause tissue heating. Even more exciting, we believe that related ideas could enable other new forms of communication in which other natural signal sources, such as thermal noise from biological tissue or other electronic components, can be modulated  
 
 usages:  **need to study** 
    - including tiny sensors and implanted medical devices,  
@@ -36,10 +36,16 @@ usages:  **need to study**
    - electronics implanted in the body that never need battery changes,   
    - better contactless credit cards  
 
+
+**need to study**
+Article notes that Backscatter[3] ...
+Youtube[4]
+
 **need to edit**
 Current limitation: this system has lower data rate and lower range than either backscatter radios or conventional radios. 
 Future: definitely improve system's data rate and range, and to test it in applications such as implanted devices. 
 
+It highlights that this work may lead to new connection between thermodynamics and communication (information technoloty). These fields are often viewed as analogous, but this work suggests some more literal connections between them.
 
 
 **References**
