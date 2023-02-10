@@ -17,7 +17,7 @@ Link to article: https://techxplore.com/news/2023-01-device-transmits-radio-powe
 
 This news article introduced a new ultra-low-power method of communication, it is possible to transmit information wirelessly, simply by opening and closing a switch that connects a resistor to an antenna. 
 
-This system, combined with techniques for harvesting energy from the environment[1], could lead to all manners of devices that transmit data without battery or other power sources. Apart from the energy needed to flip the switch, no other energy is needed and in this system the switch is a transistor, an electrically controlled switch with no moving parts consuming small amount of power. Powered signal source (like oscillator) is not needed, instead random thermal noise(Johnson noise) can take the palce of the signal driving the antenna[2].
+This system, combined with techniques for harvesting energy from the environment[1], could lead to all kinds of devices that transmit data without battery or other power sources. Apart from the energy needed to flip the switch, no other energy is needed and in this system the switch is a transistor, an electrically controlled switch with no moving parts consuming small amount of power. Powered signal source (like oscillator) is not needed, instead random thermal noise(Johnson noise) can take the palce of the signal driving the antenna[2].
 
 Figure.  
 <img src="https://user-images.githubusercontent.com/25344978/218174612-9f9477be-c5ee-4bb4-9c55-549b4749442e.png" width="300">
