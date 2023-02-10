@@ -40,10 +40,10 @@ The Packet length (bits) parameter of the transmitter defines the amount of info
 
 **Solution 3.3**  
 
-|Modulation type|Packet duration(msec)|  
-| -----  |--:|
-|QPSK | 1.136 msec|
-|BPSK | 2.136 msec|
+|Modulation type|Packet duration(msec)|Information data rate(bits/second)|  
+| ----- |--:|--:|
+|QPSK | 1.136 msec| 880.28 bits/second|
+|BPSK | 2.136 msec| 468.16 bits/second| 
 
 
 ➢ Task 3.4: If you transmit 1000 bits, how many symbols you transmit using BPSK modulation? How about in case of QPSK? [You will find answers easier from the course material than from LabVIEW.]
