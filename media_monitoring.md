@@ -15,8 +15,11 @@ Link to article: https://techxplore.com/news/2023-01-device-transmits-radio-powe
 
 **Abstract**
 
-In this news article introduced a new ultra-low-power method of communication. It is possible to wirelessly transmit information simply by opening and closing a switch that connects a resistor to an antenna. No need to send power to the antenna......
+This news article introduced a new ultra-low-power method of communication, it is possible to transmit information wirelessly, simply by opening and closing a switch that connects a resistor to an antenna. 
 
+This system, combined with techniques for harvesting energy from the environment[1], could lead to all manners of devices that transmit data without battery or other power sources. Apart from the energy needed to flip the switch, no other energy is needed and in this system the switch is a transistor, an electrically controlled switch with no moving parts consuming small amount of power. Powered signal source (like oscillator) is not needed, instead random thermal noise(Johnson noise) can take the palce of the signal driving the antenna[2].
+
+![image](https://user-images.githubusercontent.com/25344978/218174612-9f9477be-c5ee-4bb4-9c55-549b4749442e.png)
 
 **Analysis**
 
@@ -36,7 +39,11 @@ Finally, this work may lead to new connections between the study of heat (thermo
 
 **References**
 
-Zerina Kapetanovic, Miguel Morales, Joshua R. Smith. (2022). Communication by means of modulated Johnson noise. Proceedings of the National Academy of Sciences. (Volume 119, No. 49) DOI: 10.1073/pnas.2201337119  
+1) Bruno Clerckx, Rui Zhang, Robert Schober, Derrick Wing Kwan Ng, Dong In Kim, 
+H. Vincent Poor. (2019). Fundamentals of Wireless Information and Power Transfer: From RF Energy Harvester Models to Signal and System Designs. IEEE Journal on Selected Areas in Communications (Volume: 37, Issue: 1, pp4-33, January)  
+limited access at https://ieeexplore.ieee.org/document/8476597
+
+2) Zerina Kapetanovic, Miguel Morales, Joshua R. Smith. (2022). Communication by means of modulated Johnson noise. Proceedings of the National Academy of Sciences. (Volume 119, No. 49) DOI: 10.1073/pnas.2201337119  
 Limited access at https://doi.org/10.1073/pnas.2201337119
 
 Vincent Liu, Aaron Parks, Vamsi Talla, Shyamnath Gollakota, David Wetherall, Joshua R. Smith. (2013). Ambient backscatter: wireless communication out of thin air. ACM SIGCOMM Computer Communication Review. (Volume 43, Issue 4, pp39–50, October)   
@@ -46,9 +53,7 @@ Jin-Ping Niu, Geoffrey Ye Li. (2019). An Overview on Backscatter Communications.
 DOI: 10.23919/JCIN.2019.8917868   
 Limited access at https://ieeexplore.ieee.org/document/8917868
 
-Bruno Clerckx, Rui Zhang, Robert Schober, Derrick Wing Kwan Ng, Dong In Kim, 
-H. Vincent Poor. (2019). Fundamentals of Wireless Information and Power Transfer: From RF Energy Harvester Models to Signal and System Designs. IEEE Journal on Selected Areas in Communications (Volume: 37, Issue: 1, pp4-33, January)  
-limited access at https://ieeexplore.ieee.org/document/8476597
+
 
 Ambient Backscatter youtube https://www.youtube.com/watch?v=gX9cbxLSOkE
 
