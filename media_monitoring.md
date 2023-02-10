@@ -50,8 +50,7 @@ It highlights that this work may lead to new connection between thermodynamics a
 
 **References**
 
-1) Bruno Clerckx, Rui Zhang, Robert Schober, Derrick Wing Kwan Ng, Dong In Kim, ### removed  
-incent Poor. (2019). Fundamentals of Wireless Information and Power Transfer: From RF Energy Harvester Models to Signal and System Designs. IEEE Journal on Selected Areas in Communications   (Volume: 37, Issue: 1, pp4-33, January).  
+1) Bruno Clerckx, Rui Zhang, Robert Schober, Derrick Wing Kwan Ng, Dong In Kim, H. Vincent Poor. (2019). Fundamentals of Wireless Information and Power Transfer: From RF Energy Harvester Models to Signal and System Designs. IEEE Journal on Selected Areas in Communications   (Volume: 37, Issue: 1, pp4-33, January).  
 Limited access at https://ieeexplore.ieee.org/document/8476597
 
 2) Zerina Kapetanovic, Miguel Morales, Joshua R. Smith. (2022). Communication by means of modulated Johnson noise. Proceedings of the National Academy of Sciences. (Volume 119, No. 49).  
