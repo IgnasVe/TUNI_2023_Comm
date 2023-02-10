@@ -24,7 +24,11 @@ Something
 
 Something else
 
-Something else too
+limitations: However, our system has lower data rate and range than either backscatter radios or conventional radios.
+
+what next: One area for future work is to improve our system's data rate and range, and to test it in applications such as implanted devices. For implanted devices, an advantage of our new method is that there is no need to expose the patient to a strong external radio signal, which can cause tissue heating. Even more exciting, we believe that related ideas could enable other new forms of communication in which other natural signal sources, such as thermal noise from biological tissue or other electronic components, can be modulated.
+
+Finally, this work may lead to new connections between the study of heat (thermodynamics) and the study of communication (information theory). These fields are often viewed as analogous, but this work suggests some more literal connections between them.
 
 
 
