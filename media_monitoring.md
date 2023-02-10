@@ -23,6 +23,8 @@ In this news article introduced a new ultra-low-power method of communication. I
 Something
 
 Something else
+violate the second law of thermodynamics or not is not our concern here
+
 
 limitations: However, our system has lower data rate and range than either backscatter radios or conventional radios.
 
