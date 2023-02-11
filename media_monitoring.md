@@ -29,23 +29,12 @@ Article mentions about arguments between peer reviewer and research team that th
 
 Design of a powering system is one of the main challenges in implantable medical device (IMD) development[3]. These implatable medical devices(IMD) should meet basic requirements such as safety, size constraints and reliability. 
 
-***IMD: STATE OF THE ART***
-
-Today the established methods of IMD powering can be divided into the three categories. One is the use of the implantable chemical sources, and second technique is inductive powering and third technique is mechanical circulatory systems using external rechargeable batteries connected to the implant via percutaneous cables.
-
-And existing problems in this field are:
-    – it is desirable to have microimplants in the case of the IMD with low power consumption;
-    – it is necessary to reduce the risks of the burns and general tissue overheating in the course of charging of the spinal cord stimulators;
-    – it is necessary to obtain reliable solution for the wireless powering of the mechanical circulatory support systems since the driveline infections represent one of the main menaces for the patients.
-
+Today the established methods of IMD powering can be divided into the three categories. One is the use of the implantable chemical sources, and second technique is inductive powering and third technique is mechanical circulatory systems using external rechargeable batteries connected to the implant via percutaneous cables. And existing challenges in this area are reducing the risks of the burns and general tissue overheating during charging of the spinal cord stimulators and obtaining reliable solution for the wireless powering of the mechanical circulatory support systems. 
 
 Main advantage of this new method is that there is no need strong external radio signal to be exposed to the patient, which may cause physical damage. And they believe that related ideas enalbe new forms of communication can be modulated using thermal noise from biological tissue or other electronic components. Application areas are tiny sensors and implated medical devices and contactless credit cards and so on.
 
-
 **need to study**  
 if needed About Backscatter[4] ...
-
-<br>
 
 Limitation of this system is that it has lower data rate and lower range than either backscatter radios or conventional radios. So improvement of those features should be achieved to be used in real applications such as implanted devices. They highlight that their work may lead to new connection between thermodynamics and communication technology suggesting literal connections.
 
