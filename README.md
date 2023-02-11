@@ -1,4 +1,13 @@
 
+1. first one associated with the use of the implantable chemical sources. It is the optimal solution, but it can be implemented only for the IMDs with low power consumption (100 uW) and in the cases when there is enough room for implants. It is the common solution for pacemakers and implantable defibrillators.   
+
+2. second technique implies inductive powering. In this case continuous powering of the passive implant should be distinguished from the recharging of the implantable batteries.
+
+First method is used for cochlear implants, second one is the common powering techniques for spinal cord stimulators.  
+
+3. third for the mechanical circulatory systems the external rechargeable batteries are used which are connected to the implant via percutaneous cables.
+
+
 Ambient Backscatter youtube https://www.youtube.com/watch?v=gX9cbxLSOkE
 
 
