@@ -25,30 +25,27 @@ Figure.
 
 **Analysis**
 
-Article mentions about arguments between peer reviewer and research team that their method did violate the second law of thermodynamics or not, but our interest is communication not thermodynamics, so we skip this part, let's accpet that it did not break the law. In this ultra-low-power method, like other low-power communication systems, transmitter consumes barely amount of energy, on the other hand receiver consumes good amount of power, which (base station) has usually no problem with power supply. 
+Article mentions about arguments between peer reviewer and research team that their method did violate the second law of thermodynamics or not, but our interest is communication not thermodynamics, so we skip this part, let's accpet that it did not break the law. Briefly in this new ultra-low-power method, like other low-power communication systems, transmitter consumes barely amount of energy, on the other hand receiver consumes good amount of power, which (base station) has usually no problem with power supply. 
 
-This new method is that there is no need to expose the patient to a strong external radio signal, which can cause physical damage. And they believe that related ideas enalbe new forms of communication can be modulated using thermal noise from biological tissue or other electronic components.
+Main advantage of this new method is that there is no need strong external radio signal to be exposed to the patient, which may cause physical damage. And they believe that related ideas enalbe new forms of communication can be modulated using thermal noise from biological tissue or other electronic components. Application areas are tiny sensors and implated medical devices and contactless credit cards and so on.
 
-Design of a powering system is one of the main challenges in the course of the implantable medical device (IMD) development. Adopted method and its implementation influenced size, reliability and safety of the IMD. Implantable autonomous chemical energy source represent the optimal solution, but its implementation is severely restricted by size constraints and it can be implemented only for devices which consume about 0.1 mW. Thus, wireless powering and energy harvesting attract attention of the community. History of the IMD energizing is briefly addressed in this paper. Limitations of chemical energy sources are discussed. Alternative methods of IMD powering are analyzed.
+Design of a powering system is one of the main challenges in implantable medical device (IMD) development[3].These implatable medical devices(IMD) should meet some basic requirements such as safety, size constraints and reliability. 
 
-Advantages: **need to edit** an advantage of our new method is that there is no need to expose the patient to a strong external radio signal, which can cause tissue heating. Even more exciting, we believe that related ideas could enable other new forms of communication in which other natural signal sources, such as thermal noise from biological tissue or other electronic components, can be modulated  
 
-usages:  **need to study** 
-   - including tiny sensors and implanted medical devices,  
-   - sensors for smart agriculture,  
-   - electronics implanted in the body that never need battery changes,   
-   - better contactless credit cards  
+IMD POWERING: STATE OF THE ART
+Today, the established methods of IMD powering can be divided into the three classes. First one associated with the use of the implantable chemical sources. It is the optimal solution, but it can be implemented only for the IMDs with low power consumption (100 uW) and in the cases when there is enough room for implants. It is the common solution for pacemakers and implantable defibrillators. A second technique implies inductive powering. In this case continuous powering of the passive implant should be distinguished from the recharging of the implantable batteries.
+First method is used for cochlear implants, second one is the common powering techniques for spinal cord stimulators. Finally, for the mechanical circulatory systems the external rechargeable batteries are used which are connected to the implant via percutaneous cables.
+Existing problems in this field can be summarized as follows:
+– it is desirable to have microimplants in the case of the IMD with low power consumption;
+– it is necessary to reduce the risks of the burns and general tissue overheating in the course of charging of the spinal cord stimulators;
+– it is necessary to obtain reliable solution for the wireless powering of the mechanical circulatory support systems since the driveline infections represent one of the main menaces for the patients.
 
 
 **need to study**
 Article notes that Backscatter[3] ...
 
 
-**need to edit**
-Current limitation: this system has lower data rate and lower range than either backscatter radios or conventional radios. 
-Future: definitely improve system's data rate and range, and to test it in applications such as implanted devices. 
-
-It highlights that this work may lead to new connection between thermodynamics and communication (information technoloty). These fields are often viewed as analogous, but this work suggests some more literal connections between them.
+Limitation of this system is that it has lower data rate and lower range than either backscatter radios or conventional radios. So improvement of those features should be achieved to be used in real applications such as implanted devices. They highlight that their work may lead to new connection between thermodynamics and communication technology suggesting literal connections.
 
 
 **References**
@@ -56,9 +53,13 @@ It highlights that this work may lead to new connection between thermodynamics a
 1) Bruno Clerckx, Rui Zhang, Robert Schober, Derrick Wing Kwan Ng, Dong In Kim, H. Vincent Poor. (2019). Fundamentals of Wireless Information and Power Transfer: From RF Energy Harvester Models to Signal and System Designs. IEEE Journal on Selected Areas in Communications   (Volume: 37, Issue: 1, pp4-33, January).  
 Limited access at https://ieeexplore.ieee.org/document/8476597
 
-2) Zerina Kapetanovic, Miguel Morales, Joshua R. Smith. (2022). Communication by means of modulated Johnson noise. Proceedings of the National Academy of Sciences. (Volume 119, No. 49).  
+2) Zerina Kapetanovic, Miguel Morales, Joshua R. Smith. (2022). Communication by means of modulated Johnson noise. Proceedings of the National Academy of Sciences.(Volume 119, No. 49).   
 Limited access at https://doi.org/10.1073/pnas.2201337119
 
-3) Vincent Liu, Aaron Parks, Vamsi Talla, Shyamnath Gollakota, David Wetherall, Joshua R. Smith. (2013). Ambient backscatter: wireless communication out of thin air. ACM SIGCOMM Computer Communication Review. (Volume 43, Issue 4, pp39–50, October)   
+3) A. A. Danilov. (2019). Powering of implantable medical devices: History, current status and prospects. XIV RUSSIAN-GERMANY CONFERENCE ON BIOMEDICAL ENGINEERING (RGC-2019). DOI:10.1063/1.5121941  
+Available at https://www.researchgate.net/publication/335145265_Powering_of_implantable_medical_devices_History_current_status_and_prospects
+
+4) Vincent Liu, Aaron Parks, Vamsi Talla, Shyamnath Gollakota, David Wetherall, Joshua R. Smith. (2013). Ambient backscatter: wireless communication out of thin air. ACM SIGCOMM Computer Communication Review. (Volume 43, Issue 4, pp39–50, October)   
 Available at https://dl.acm.org/doi/pdf/10.1145/2486001.2486015
 
+Adopted method and its implementation influenced size, reliability and safety of the IMD. Implantable autonomous chemical energy source represent the optimal solution, but its implementation is severely restricted by size constraints and it can be implemented only for devices which consume about 0.1 mW. Thus, wireless powering and energy harvesting attract attention of the community. 
