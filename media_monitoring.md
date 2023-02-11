@@ -27,6 +27,9 @@ Figure.
 
 Article mentions about arguments between peer reviewer and research team that their method did violate the second law of thermodynamics or not, but our interest is communication not thermodynamics, so we skip this part, let's accpet that it did not break the law. In this ultra-low-power method, like other low-power communication systems, transmitter consumes barely amount of energy, on the other hand receiver consumes good amount of power, which (base station) has usually no problem with power supply. 
 
+This new method is that there is no need to expose the patient to a strong external radio signal, which can cause physical damage. And they believe that related ideas enalbe new forms of communication can be modulated using thermal noise from biological tissue or other electronic components.
+
+Design of a powering system is one of the main challenges in the course of the implantable medical device (IMD) development. Adopted method and its implementation influenced size, reliability and safety of the IMD. Implantable autonomous chemical energy source represent the optimal solution, but its implementation is severely restricted by size constraints and it can be implemented only for devices which consume about 0.1 mW. Thus, wireless powering and energy harvesting attract attention of the community. History of the IMD energizing is briefly addressed in this paper. Limitations of chemical energy sources are discussed. Alternative methods of IMD powering are analyzed.
 
 Advantages: **need to edit** an advantage of our new method is that there is no need to expose the patient to a strong external radio signal, which can cause tissue heating. Even more exciting, we believe that related ideas could enable other new forms of communication in which other natural signal sources, such as thermal noise from biological tissue or other electronic components, can be modulated  
 
@@ -39,7 +42,7 @@ usages:  **need to study**
 
 **need to study**
 Article notes that Backscatter[3] ...
-Youtube[4]
+
 
 **need to edit**
 Current limitation: this system has lower data rate and lower range than either backscatter radios or conventional radios. 
@@ -59,4 +62,3 @@ Limited access at https://doi.org/10.1073/pnas.2201337119
 3) Vincent Liu, Aaron Parks, Vamsi Talla, Shyamnath Gollakota, David Wetherall, Joshua R. Smith. (2013). Ambient backscatter: wireless communication out of thin air. ACM SIGCOMM Computer Communication Review. (Volume 43, Issue 4, pp39–50, October)   
 Available at https://dl.acm.org/doi/pdf/10.1145/2486001.2486015
 
-4) Ambient Backscatter youtube https://www.youtube.com/watch?v=gX9cbxLSOkE
