@@ -32,7 +32,9 @@ Main advantage of this new method is that there is no need strong external radio
 Design of a powering system is one of the main challenges in implantable medical device (IMD) development[3].These implatable medical devices(IMD) should meet basic requirements such as safety, size constraints and reliability. 
 
 **SHOULD EDIT BELOW**
+
 ***STATE OF THE ART TODAY***
+
 the established methods of IMD powering can be divided into the three classes. 
 
 First one associated with the use of the implantable chemical sources. It is the optimal solution, but it can be implemented only for the IMDs with low power consumption (100 uW) and in the cases when there is enough room for implants. It is the common solution for pacemakers and implantable defibrillators.   
@@ -69,5 +71,3 @@ Available at https://www.researchgate.net/publication/335145265_Powering_of_impl
 
 4) Vincent Liu, Aaron Parks, Vamsi Talla, Shyamnath Gollakota, David Wetherall, Joshua R. Smith. (2013). Ambient backscatter: wireless communication out of thin air. ACM SIGCOMM Computer Communication Review. (Volume 43, Issue 4, pp39–50, October)   
 Available at https://dl.acm.org/doi/pdf/10.1145/2486001.2486015
-
-Adopted method and its implementation influenced size, reliability and safety of the IMD. Implantable autonomous chemical energy source represent the optimal solution, but its implementation is severely restricted by size constraints and it can be implemented only for devices which consume about 0.1 mW. Thus, wireless powering and energy harvesting attract attention of the community. 
