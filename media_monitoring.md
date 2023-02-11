@@ -36,7 +36,7 @@ Main advantage of this new method is that there is no need strong external radio
 **need to study**  
 if needed About Backscatter[4] ...
 
-Limitation of this system is that it has lower data rate and lower range than either backscatter radios or conventional radios. So improvement of those features should be achieved to be used in real applications such as implanted devices. They highlight that their work may lead to new connection between thermodynamics and communication technology suggesting literal connections.
+Limitation of this system is that it has lower data rate and lower range than either backscatter radios or conventional radios. So improvement of those features should be achieved to be used in real applications such as implanted devices. They highlight that their work may lead to new connection between thermodynamics and communication technology.
 
 
 **References**
