@@ -43,13 +43,13 @@ First method is used for cochlear implants, second one is the common powering te
 Finally, for the mechanical circulatory systems the external rechargeable batteries are used which are connected to the implant via percutaneous cables.
 
 Existing problems in this field can be summarized as follows:
-  – it is desirable to have microimplants in the case of the IMD with low power consumption;
-  – it is necessary to reduce the risks of the burns and general tissue overheating in the course of charging of the spinal cord stimulators;
-  – it is necessary to obtain reliable solution for the wireless powering of the mechanical circulatory support systems since the driveline infections represent one of the main menaces for the patients.
+    – it is desirable to have microimplants in the case of the IMD with low power consumption;
+    – it is necessary to reduce the risks of the burns and general tissue overheating in the course of charging of the spinal cord stimulators;
+    – it is necessary to obtain reliable solution for the wireless powering of the mechanical circulatory support systems since the driveline infections represent one of the main menaces for the patients.
 
 
-**need to study**
-Aboue Backscatter[3] ...
+**need to study**  
+if needed About Backscatter[4] ...
 
 <br>
 
