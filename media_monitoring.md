@@ -33,10 +33,9 @@ Today the established methods of IMD powering can be divided into the three cate
 
 Main advantage of this new method is that there is no need strong external radio signal to be exposed to the patient, which may cause physical damage. And they believe that related ideas enalbe new forms of communication can be modulated using thermal noise from biological tissue or other electronic components. Application areas are tiny sensors and implated medical devices and contactless credit cards and so on.
 
-**need to study**  
-if needed About Backscatter[4] ...
+An ambient backscatter (known as RF backscatter) is a communication primitive where devices communicate by backscattering ambient radio frequency signals such as radio, television and mobile telephone, without a battery or power grid connection. A backscatter is similar to this new approach, but the major difference is that in a backscatter communication system has RF signal-generating source in addition to the data transmitter and the data receiver. 
 
-Limitation of this system is that it has lower data rate and lower range than either backscatter radios or conventional radios. So improvement of those features should be achieved to be used in real applications such as implanted devices. They highlight that their work may lead to new connection between thermodynamics and communication technology.
+Limitation of this new approach though is that it has lower data rate and lower range than either backscatter or conventional radios. So improvement of those features should be achieved to be used in real applications such as implanted devices. They highlight that their work may lead to new connection between thermodynamics and communication technology.
 
 
 **References**
